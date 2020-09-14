@@ -1,12 +1,17 @@
 import React from 'react';
-import { View, Text, AppRegistry, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, AppRegistry } from 'react-native';
 
 const Estilos = {
     estiloTexto: {
-        fontSize: 30,
+        fontSize: 20,
         backgroundColor: '#08509B',
-        marginHorizontal: 10,
-        paddingVertical: 20
+        paddingTop: 15,
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0, 
+            height: 2,
+        },
+        shadowOpacity: 0.4
     }
 };
 
