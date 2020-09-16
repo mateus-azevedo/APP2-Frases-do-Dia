@@ -6,7 +6,17 @@ const Estilos = {
         fontSize: 30,
         backgroundColor: '#08509B',
         height: 60,
-        width: 60
+        width: 60,
+        textAlign: 'center',
+        textAlignVertical: 'center'
+    },
+    estiloTexto2: {
+        fontSize: 30,
+        backgroundColor: '#2A48FA',
+        height: 60,
+        width: 60,
+        textAlign: 'center',
+        textAlignVertical: 'center'
     },
     estiloView: {
         backgroundColor: 'skyblue',
@@ -17,10 +27,11 @@ const Estilos = {
 };
 
 const App = () => {
-    const { estiloTexto, estiloView } = Estilos;
+    const { estiloTexto, estiloTexto2, estiloView } = Estilos;
     return(
         <View style={ estiloView }>
-            <Text style={ estiloTexto }></Text>
+            <Text style={ estiloTexto }>A</Text>
+            <Text style={ estiloTexto2 }>B</Text>
         </View>
     );
 };
