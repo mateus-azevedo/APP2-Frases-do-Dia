@@ -5,26 +5,22 @@ const Estilos = {
     estiloTexto: {
         fontSize: 30,
         backgroundColor: '#08509B',
-        paddingTop: 15,
-        color: '#fff',
-        fontStyle: 'italic',
-        fontWeight: '100',
-        textAlign: 'center',
-        textDecorationLine: 'underline'
-        
-        // shadowColor: '#000',
-        // shadowOffset: {
-        //     width: 0, 
-        //     height: 2,
-        // },
-        // shadowOpacity: 0.4
+        height: 60,
+        width: 60
+    },
+    estiloView: {
+        backgroundColor: 'skyblue',
+        height: 300,
+        justifyContent: 'center',
+        alignItems: 'flex-end'
     }
 };
 
 const App = () => {
+    const { estiloTexto, estiloView } = Estilos;
     return(
-        <View style={{elevation: 3}}>
-            <Text style={ Estilos.estiloTexto }>Frases do dia</Text>
+        <View style={ estiloView }>
+            <Text style={ estiloTexto }></Text>
         </View>
     );
 };
