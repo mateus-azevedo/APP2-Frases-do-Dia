@@ -1,26 +1,23 @@
 import React from 'react';
-import { AppRegistry, View, Text, ImageBackground } from 'react-native';
+import { AppRegistry, View, Text, Image } from 'react-native';
 
 const Estilos = {
     
     principal: {
-        paddingTop: 40
+        backgroundColor: '#538530',
+        flex: 1
     },
-    imagem: {
-        justifyContent: 'flex-end'
-    }
     
 };
 
+const botaoPressionado = () => {
+
+}
+
 const App = () => {
-    const { principal, imagem } = Estilos;
+    const { principal } = Estilos;
     return(
         <View style={principal}>
-
-            <ImageBackground style={imagem} style={{width: '70%', height: '70%'}} source={ require('./imgs/uvas.png') } >
-                <Text style={{color:'red', fontWeight: 'bold', fontSize: 20}}>Legenda para a foto</Text>
-            </ImageBackground>
-            
         </View>
     );
 };
