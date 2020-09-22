@@ -12,7 +12,7 @@ const Estilos = {
         backgroundColor: 'brown'
     },
     conteudo: {
-        flex: 4, 
+        flex: 8, 
         backgroundColor: 'yellowgreen'
     },
     rodape: {
