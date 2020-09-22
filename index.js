@@ -7,7 +7,7 @@ const Estilos = {
         paddingTop: 40
     },
     imagem: {
-        justifyContent: 'center'
+        justifyContent: 'flex-end'
     }
     
 };
@@ -17,8 +17,8 @@ const App = () => {
     return(
         <View style={principal}>
 
-            <ImageBackground style={imagem} source={ require('./imgs/uvas.png') } >
-                <Text>Legenda para a foto</Text>
+            <ImageBackground style={imagem} style={{width: '70%', height: '70%'}} source={ require('./imgs/uvas.png') } >
+                <Text style={{color:'red', fontWeight: 'bold', fontSize: 20}}>Legenda para a foto</Text>
             </ImageBackground>
             
         </View>
