@@ -14,7 +14,8 @@ const App = () => {
     return(
         <View style={principal}>
 
-            <Image source={ require('./imgs/uvas.png') } />
+            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                   style={{width: 400, height: 400}} />
             
         </View>
     );
