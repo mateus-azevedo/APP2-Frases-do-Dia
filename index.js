@@ -8,15 +8,15 @@ const Estilos = {
         backgroundColor: 'cornflowerblue'
     },
     topo: {
-        flex: 1, //1:3
+        flex: 1, //1:5
         backgroundColor: 'brown'
     },
     conteudo: {
-        flex: 1, //1:3
+        flex: 3, //3:5
         backgroundColor: 'yellowgreen'
     },
     rodape: {
-        flex: 1, //1:3
+        flex: 1, //1:5
         backgroundColor: 'orangered'
     },
     
