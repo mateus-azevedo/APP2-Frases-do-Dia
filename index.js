@@ -2,38 +2,30 @@ import React from 'react';
 import { View, Text, AppRegistry } from 'react-native';
 
 const Estilos = {
-    estiloTexto: {
-        fontSize: 30,
-        backgroundColor: '#08509B',
-        // height: 60,   //Tirando o tamanho fixo dos componentes da minha View
-        // width: 60,
-        textAlign: 'center',
-        textAlignVertical: 'center'
+    
+    principal: {
+        flex: 1, //ocupa um espaço de um total de uma parte 1:1
+        backgroundColor: 'cornflowerblue'
     },
-    estiloTexto2: {
-        fontSize: 30,
-        backgroundColor: '#2A48FA',
-        // height: 60,   //Tirando o tamanho fixo dos componentes da minha View
-        // width: 60,
-        textAlign: 'center',
-        textAlignVertical: 'center'
+    conteudo1: {
+        backgroundColor: 'brown'
     },
-    estiloView: {
-        backgroundColor: 'skyblue',
-        height: 600,
-        justifyContent: 'space-between',
-        alignItems: 'stretch', //stretch é o valor padrão do alignItems. Só funciona quando não tenho um tamanho fixo para os componentes dentro da View
-        flexDirection: 'column'
-    }
+    conteudo2: {
+        backgroundColor: 'yellowgreen'
+    },
+    conteudo3: {
+        backgroundColor: 'orangered'
+    },
+    
 };
 
 const App = () => {
-    const { estiloTexto, estiloTexto2, estiloView } = Estilos;
+    const { principal, conteudo1, conteudo2, conteudo3 } = Estilos;
     return(
-        <View style={ estiloView }>
-            <Text style={ estiloTexto }>A</Text>
-            <Text style={ estiloTexto2 }>B</Text>
-            <Text style={ estiloTexto }>C</Text>
+        <View style={ principal }>
+            <Text style={ conteudo1 }>Topo</Text>
+            <Text style={ conteudo2 }>Conteudo</Text>
+            <Text style={ conteudo3 }>Rodape</Text>
         </View>
     );
 };
