@@ -7,11 +7,14 @@ const Estilos = {
         paddingTop: 40
     },
     botao: {
-        backgroundColor: '#48BBEC',
-        padding: 20
+        backgroundColor: '#fff',
+        padding: 10,
+        borderColor: '#1d8eb8',
+        borderWidth: 1,
+        borderRadius: 8
     },
     textoBotao: {
-        color: '#fff',
+        color: '#48BBEC',
         fontSize: 16,
         fontWeight: 'bold',
         alignSelf: 'center'
