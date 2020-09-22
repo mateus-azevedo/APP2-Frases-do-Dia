@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, View, Text, Image, TouchableOpacity } from 'react-native';
+import { AppRegistry, View, Text, Image, TouchableOpacity, Alert } from 'react-native';
 
 const Estilos = {
     
@@ -23,8 +23,20 @@ const Estilos = {
     
 };
 
-const botaoPressionado = () => {
+const gerarNovaFrase = () => {
+    var numeroAleatorio = Math.random();
+    numeroAleatorio = Math.floor(numeroAleatorio * 5);
 
+    var frases = Array();
+    frases[0] = 'aa';
+    frases[1] = 'bb';
+    frases[2] = 'cc';
+    frases[3] = 'dd';
+    frases[4] = 'ee';
+
+    var fraseEscolhida = frases[ numeroAleatorio ];
+    
+    Alert.alert(fraseEscolhida);
 }
 
 const App = () => {
@@ -33,7 +45,10 @@ const App = () => {
         <View style={principal}>
 
             <Image source={require('./imgs/logo.png')} />
-            <TouchableOpacity style={botao}>
+            <TouchableOpacity 
+                onPress={gerarNovaFrase}
+                style={botao}>
+
                 <Text style={textoBotao}>Nova Frase</Text>
             </TouchableOpacity>
         </View>
