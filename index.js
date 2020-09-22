@@ -4,28 +4,31 @@ import { View, Text, AppRegistry } from 'react-native';
 const Estilos = {
     
     principal: {
-        flex: 1, //ocupa um espaço de um total de uma parte 1:1
+        flex: 1, 
         backgroundColor: 'cornflowerblue'
     },
-    conteudo1: {
+    topo: {
+        flex: 1, //1:3
         backgroundColor: 'brown'
     },
-    conteudo2: {
+    conteudo: {
+        flex: 1, //1:3
         backgroundColor: 'yellowgreen'
     },
-    conteudo3: {
+    rodape: {
+        flex: 1, //1:3
         backgroundColor: 'orangered'
     },
     
 };
 
 const App = () => {
-    const { principal, conteudo1, conteudo2, conteudo3 } = Estilos;
+    const { principal, topo, conteudo, rodape } = Estilos;
     return(
         <View style={ principal }>
-            <Text style={ conteudo1 }>Topo</Text>
-            <Text style={ conteudo2 }>Conteudo</Text>
-            <Text style={ conteudo3 }>Rodape</Text>
+            <Text style={ topo }>Topo</Text>
+            <Text style={ conteudo }>Conteudo</Text>
+            <Text style={ rodape }>Rodape</Text>
         </View>
     );
 };
