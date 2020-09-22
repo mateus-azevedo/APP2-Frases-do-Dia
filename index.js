@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppRegistry, View, Text, Image } from 'react-native';
+import { AppRegistry, View, Text, ImageBackground } from 'react-native';
 
 const Estilos = {
     
@@ -17,9 +17,9 @@ const App = () => {
     return(
         <View style={principal}>
 
-            <Image style={imagem} source={ require('./imgs/uvas.png') } >
+            <ImageBackground style={imagem} source={ require('./imgs/uvas.png') } >
                 <Text>Legenda para a foto</Text>
-            </Image>
+            </ImageBackground>
             
         </View>
     );
